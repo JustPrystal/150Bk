@@ -1,6 +1,8 @@
 @import 'vars';
 @import 'mixins';
-
+@import 'fonts';
 @import 'global';
 
 // components go here
+
+@import './components/twocolumn';
