@@ -7,7 +7,7 @@ export default function GlobalLayout() {
     <>
       <Header />
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
