@@ -1,0 +1,144 @@
+.two-column{
+    padding: 80px 40px;
+    .container{
+        margin: 0 auto;
+        max-width: 1700px;
+        gap: 50px;
+
+        .content-image-wrap{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .content-wrap{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 50px;
+                
+                .heading{
+                    width: 70%;
+                    font-family: 'DirtyLine';
+                    font-size: 120px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+                .description{
+                    font-family: 'LabGrotesque';
+                    font-size: 22px;
+                }
+            }
+            .image-wrap{
+                
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .images-wrap{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    &.row-reverse{
+
+        .content-image-wrap{
+            align-items: flex-end;
+
+            .content-wrap{
+                text-align: right;
+                align-items: flex-end;
+            }
+        }
+    }
+    &.brown{
+        background-color: #6D3214;
+
+        .container{
+
+            .content-image-wrap{
+
+                .content-wrap{
+
+                    .heading{
+                        color: #fff;
+                    }
+                    .description{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &.green{
+        background-color: #1A4A4A;
+
+        .container{
+
+            .content-image-wrap{
+
+                .content-wrap{
+
+                    .heading{
+                        color: #fff;
+                    }
+                    .description{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &.white-orange{
+        background-color: #fff;
+
+        .container{
+
+            .content-image-wrap{
+
+                .content-wrap{
+
+                    .heading{
+                        color: #CF7127;
+                    }
+                }
+            }
+        }
+    }
+    &.white-brown{
+        background-color: #fff;
+
+        .container{
+
+            .content-image-wrap{
+
+                .content-wrap{
+
+                    .heading{
+                        color: #6D3214;
+                    }
+                }
+            }
+        }
+    }
+    &.white-blue{
+        background-color: #fff;
+
+        .container{
+
+            .content-image-wrap{
+
+                .content-wrap{
+
+                    .heading{
+                        color: #263A52;
+                    }
+                }
+            }
+        }
+    }
+}
