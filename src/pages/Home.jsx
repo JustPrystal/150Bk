@@ -14,6 +14,7 @@ const twoCoulmnData = [
     flexDirection: "row-reverse",
     contentWidth: "calc( 40% - 25px )",
     imageWidth: "calc( 60% - 25px )",
+    padding: "40px 40px 60px"
 
   },
   {
@@ -24,6 +25,7 @@ const twoCoulmnData = [
     contentImage: sec3ContentImage,
     images: sec3Image,
     flexDirection: "row",
+    padding: "80px 40px 60px"
 
   },
 ]

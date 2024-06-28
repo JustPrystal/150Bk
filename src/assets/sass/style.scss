@@ -4,5 +4,10 @@
 @import 'global';
 
 // components go here
-
+@import './components/header';
+@import './components/banner';
 @import './components/twocolumn';
+@import './components/modal';
+@import './components/table';
+@import './components/form';
+@import './components/footer';

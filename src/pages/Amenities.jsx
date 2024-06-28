@@ -22,6 +22,9 @@ const twoCoulmnData = [
         contentImage: sec1ContentImage,
         images: sec1Image,
         flexDirection: "row",
+        contentWidth: "calc( 40% - 25px )",
+        imageWidth: "calc( 60% - 25px )",
+        padding: "40px",
     },
     {
         variant: "brown",
@@ -30,6 +33,7 @@ const twoCoulmnData = [
         contentImage: "",
         images: sec2Image,
         flexDirection: "row-reverse",
+        padding: "40px 40px 60px",
         
     },
     {
@@ -39,7 +43,7 @@ const twoCoulmnData = [
         contentImage: sec3ContentImage,
         images: sec3Image,
         flexDirection: "row",
-        
+        padding: "40px",        
     },
     {
         variant: "white-brown",
@@ -48,7 +52,9 @@ const twoCoulmnData = [
         contentImage: sec4ContentImage,
         images: sec4Image,
         flexDirection: "row",
-
+        contentWidth: "calc( 40% - 25px )",
+        imageWidth: "calc( 60% - 25px )",
+        padding: "20px 40px 30px",
     },
     {
         variant: "white-brown",
@@ -58,6 +64,9 @@ const twoCoulmnData = [
         contentImage: sec5ContentImage,
         images: sec5Image,
         flexDirection: "row-reverse",
+        contentWidth: "calc( 40% - 25px )",
+        imageWidth: "calc( 60% - 25px )",
+        padding: "20px 40px 30px",
     },
     {
         variant: "brown",
@@ -66,7 +75,9 @@ const twoCoulmnData = [
         isContentImage: false,
         images: sec6Image,
         flexDirection: "row",
-        
+        contentWidth: "calc( 40% - 25px )",
+        imageWidth: "calc( 60% - 25px )",
+        padding: "40px 40px 60px",        
     },
     {
         variant: "white-brown",
@@ -75,6 +86,7 @@ const twoCoulmnData = [
         isContentImage: false,
         images: sec7Image,
         flexDirection: "row-reverse",
+        padding: "40px 40px 10px",
     },
     {
         variant: "white-brown",
@@ -83,6 +95,7 @@ const twoCoulmnData = [
         isContentImage: false,
         images: sec8Image,
         flexDirection: "row",
+        padding: "10px 40px 20px",
     },
     {
         variant: "green",
@@ -91,6 +104,9 @@ const twoCoulmnData = [
         isContentImage: false,
         images: sec9Image,
         flexDirection: "row-reverse",
+        contentWidth: "calc( 40% - 25px )",
+        imageWidth: "calc( 60% - 25px )",
+        padding: "60px 40px",
     },
 ]
 

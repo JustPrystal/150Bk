@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Residences from "./pages/Residences";
 import Amenities from "./pages/Amenities";
 import Neighborhoood from "./pages/Neighborhood";
+import Availabilities from "./pages/Availabilities";
 import GlobalLayout from "./layout";
 import ErrorPage from "./pages/ErrorPage";
 import { createBrowserRouter } from "react-router-dom";
@@ -34,7 +35,11 @@ const routes = [
     {
         path: "/neighborhood",
         element: <Neighborhoood />,
-    }
+    },
+    {
+        path: "/availabilities",
+        element: <Availabilities />,
+    },
 ]
 
 const router = createBrowserRouter([

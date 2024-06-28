@@ -17,6 +17,7 @@ const twoCoulmnData = [
         contentImage: sec1ContentImage,
         images: sec1Image,
         flexDirection: "row",
+        padding: "60px 40px 40px",
     },
     {
         variant: "brown",
@@ -25,6 +26,9 @@ const twoCoulmnData = [
         isContentImage: false,
         images: sec2Image,
         flexDirection: "row-reverse",
+        contentWidth: "calc( 40% - 25px )",
+        imageWidth: "calc( 60% - 25px )",
+        padding: "40px 40px 60px",
     },
     {
         variant: "white-brown",
@@ -34,6 +38,7 @@ const twoCoulmnData = [
         contentImage: sec3ContentImage,
         images: sec3Image,
         flexDirection: "row",
+        padding: "80px 40px 40px",
 
     },
 ]

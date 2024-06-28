@@ -1,15 +1,18 @@
 export default function TwoColumn({data}){
 
-    const {heading, description, images, isContentImage, contentImage, flexDirection, imageWidth, contentWidth, variant} = data;
+    const {heading, description, images, isContentImage, contentImage, flexDirection, imageWidth, contentWidth, variant, padding} = data;
 
     return(
         <>
-            <section className={variant + " two-column " + flexDirection}>
+            <section className={variant + " two-column " + flexDirection} style={{
+                padding: padding,
+            }} >
                 <div className="container" style={{
                     display: "flex",
+                    flexWrap: "wrap",
                     flexDirection: flexDirection,
                     justifyContent: "space-between",
-                    alignItems: "center"
+                    alignItems: "center",
                 }} >
                     <div className="content-image-wrap" style={{
                         width: contentWidth,

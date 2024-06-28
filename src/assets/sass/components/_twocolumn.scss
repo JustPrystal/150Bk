@@ -1,21 +1,46 @@
 .two-column{
-    padding: 80px 40px;
+
+    @include responsive(sm){
+        padding-right: 20px;
+        padding-left: 20px;
+    }
     .container{
         margin: 0 auto;
         max-width: 1700px;
         gap: 50px;
 
+        @include responsive(lg){
+            gap: 40px;
+        }
+        @include responsive(md){
+            gap: 30px;
+        }
+        @include responsive(sm){
+            flex-direction: row;
+            justify-content: flex-start !important;
+        }
+
         .content-image-wrap{
-            width: 50%;
+            width: calc(50% - 25px);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include responsive(sm){
+                width: 100% !important;      
+                flex-direction: row;     
+            }
 
             .content-wrap{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 margin-bottom: 50px;
+
+                @include responsive(sm){
+                    align-items: flex-start;  
+                    margin-bottom: 0;     
+                }
                 
                 .heading{
                     width: 70%;
@@ -23,21 +48,60 @@
                     font-size: 120px;
                     font-weight: 700;
                     margin-bottom: 30px;
+
+                    @include responsive(xl){
+                        font-size: 100px;
+                    }
+                    @include responsive(lg){
+                        font-size: 80px;
+                    }
+                    @include responsive(md){
+                        font-size: 60px;
+                    }
+                    @include responsive(sm){
+                        font-size: 50px;
+                        width: 50%;
+                    }
+                    @include responsive(xs){
+                        font-size: 40px;   
+                    }
                 }
                 .description{
+                    width: 70%;
                     font-family: 'LabGrotesque';
                     font-size: 22px;
+
+                    @include responsive(lg){
+                        font-size: 20px;
+                    }
+                    @include responsive(md){
+                        font-size: 18px;
+                    }
+                    @include responsive(sm){
+                        font-size: 16px; 
+                        width: 100%;  
+                    }
+                    @include responsive(xs){
+                        font-size: 14px;   
+                    }
                 }
             }
             .image-wrap{
-                
+                @include responsive(sm){
+                    display: none;       
+                }
                 img{
                     width: 100%;
                 }
             }
         }
         .images-wrap{
-            width: 50%;
+            width: calc(50% - 25px);
+
+            @include responsive(sm){
+                width: 100% !important;           
+            }
+            
             img{
                 width: 100%;
             }
@@ -49,9 +113,18 @@
         .content-image-wrap{
             align-items: flex-end;
 
+            @include responsive(sm){
+                align-items: flex-start;           
+            }
+
             .content-wrap{
                 text-align: right;
                 align-items: flex-end;
+
+                @include responsive(sm){
+                    text-align: left;
+                    align-items: flex-start;    
+                }   
             }
         }
     }
