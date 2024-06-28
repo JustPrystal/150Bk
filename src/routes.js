@@ -3,12 +3,12 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Residences from "./pages/Residences";
-import Amenities from "./pages/Amenities";
 import Neighborhoood from "./pages/Neighborhood";
 import Availabilities from "./pages/Availabilities";
 import GlobalLayout from "./layout";
 import ErrorPage from "./pages/ErrorPage";
 import { createBrowserRouter } from "react-router-dom";
+import Building from "./pages/Building";
 
 
 const routes = [
@@ -29,8 +29,8 @@ const routes = [
         element: <Residences />,
     },
     {
-        path: "/amenities",
-        element: <Amenities />,
+        path: "/building",
+        element: <Building />,
     },
     {
         path: "/neighborhood",

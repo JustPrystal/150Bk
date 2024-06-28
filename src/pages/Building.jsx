@@ -117,7 +117,7 @@ const twoCoulmnData = [
     },
 ]
 
-export default function Amenities(){
+export default function Building(){
     return(
         <>
               <Banner data={BannerData}/>
