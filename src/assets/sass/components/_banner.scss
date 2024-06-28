@@ -4,7 +4,7 @@
         top: 0;
         width: 100%;
         z-index: -1;
-        @media(max-width:1370px){
+        @media(max-width:1440px){
             height: 100vh;
             object-fit: cover;
         }        
@@ -25,62 +25,69 @@
     .inner{
         max-width: 1440px;
         margin: 0 auto;
-        padding: 150px 100px 305px 100px;
+        padding: 200px 100px;
         display: flex;
         justify-content: center;
-        @include responsive(lg){
-            padding: 200px 100px 340px 100px;
-        }
         @include responsive(md){
-            padding: 200px 80px 145px 80px;
+            padding: 150px 80px;
         }
         @include responsive(sm){
-            padding: 233px 20px 150px 20px;
+            padding: 120px 60px;
         }
         @include responsive(xs){
-            padding: 180px 20px 78px 20px;
+            padding: 150px 20px;
         }
         .content{
             text-align: center;
-            padding-bottom: 35px;
+            max-width: 1000px;
             @include responsive(xs){
-                padding-bottom: 20px;
-                max-width: 378px;
+                max-width: 450px;
             }
             .heading{
-                font-family: 'cako';
-                font-size: 87px;
-                line-height: 1.3em;
+                font-family: 'DirtyLine';
+                font-size: 100px;
                 color: white;
                 font-weight: 500;
-                @include responsive(md){
-                    font-size: 70px;
+                @include responsive(lg){
+                    font-size: 90px;
                 }
-                @include responsive(sm){
+                @include responsive(md){
+                    font-size: 60px;
+                }
+                @include responsive(md){
                     font-size: 48px;
                 }
-            }
-            .sub-heading{
-                color: #fff;
-                font-size: 30px;
-                font-family: 'super gothic';
-                font-weight: lighter;
-                max-width: 920px;
-                margin: 0 auto;
-                @include responsive(md){
-                    font-size: 20px;
+                span{
+                    font-size: 50px;
+                    @include responsive(lg){
+                        font-size: 45px;
+                    }
+                    @include responsive(md){
+                        font-size: 30px;
+                    }
+                    @include responsive(sm){
+                        font-size: 24px;
+                    }
                 }
             }
             .description{
                 margin: 0 auto;
-                margin-top: 24px;
-                max-width: 920px;
+                margin-top: 20px;
                 color: #fff;
-                font-size: 22px;
-                font-family: 'super gothic';
+                font-size: 28px;
+                font-family: 'LabGrotesque';
                 font-weight: lighter;
+                @include responsive(xl){
+                    font-size: 26px;
+                }
+                @include responsive(lg){
+                    font-size: 24px;
+                }
                 @include responsive(md){
-                    margin-top: 10px;
+                    font-size: 18px;
+                    margin-top: 15px;
+                }
+                @include responsive(sm){
                     font-size: 16px;
                 }
             }

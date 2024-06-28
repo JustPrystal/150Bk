@@ -1,6 +1,6 @@
-import footerLogo from "../assets/images/footer/Footer.png";
-import EXRLogo from "../assets/images/footer/Footer equal housing.png";
-import fairHousingLogo from "../assets/images/footer/Footer exr.png";
+import footerLogo from "../assets/images/Logos/Footer.png";
+import EXRLogo from "../assets/images/Logos/Footer equal housing.png";
+import fairHousingLogo from "../assets/images/Logos/Footer exr.png";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import Modal from "../components/Modal"
@@ -59,8 +59,6 @@ export default function Footer(){
                                 <img src={EXRLogo} alt="" />
                             </div>
                         </div>
-                        {/* <a href="https://www.google.com/maps?q=2339+Nostrand+Ave,+Brooklyn,+NY+11210,+USA&ftid=0x89c244ad93161391:0xc376b00294c5f48e" >
-                        2339 Nostrand Ave, <br /> Brooklyn, NY 11210, USA</a> */}
                     </div>
                     <div className="logo-and-copyright">
                         <Link onClick={scrollUp} to="/"><img src={footerLogo} alt="footer logo" /></Link>
@@ -73,7 +71,7 @@ export default function Footer(){
                     <div className="links">
                         <NavLink onClick={scrollUp} className="link" to="/">Home</NavLink>
                         <NavLink onClick={scrollUp} className="link" to="/residences">Residences</NavLink>
-                        <NavLink onClick={scrollUp} className="link" to="/amenities">Amenities</NavLink>
+                        <NavLink onClick={scrollUp} className="link" to="/building">Building</NavLink>
                         <NavLink onClick={scrollUp} className="link" to="/availabilities">Availabilities</NavLink>
                         <NavLink onClick={scrollUp} className="link" to="/neighborhood">Neighborhood</NavLink>
                         <NavLink onClick={scrollUp} className="link" to="/contact">Contact</NavLink>

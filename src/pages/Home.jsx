@@ -2,8 +2,14 @@ import sec2Image from "../assets/images/OneFifty_HomePage_v1/section_2.png";
 import sec3ContentImage from "../assets/images/OneFifty_HomePage_v1/section_3_image_1.png";
 import sec3Image from "../assets/images/OneFifty_HomePage_v1/section_3_image_2.png";
 import TwoColumn from "../components/TwoColumn";
+import Banner from "../components/Banner";
+import BannerImage from "../assets/images/OneFifty_HomePage_v1/Banner.png"
 
-
+let BannerData = {
+  backgroundImage : BannerImage,
+  heading : "The Best <span>in</span> Brooklyn",
+  description: "Welcome to One Fifty - one of Brooklyn’s newest and most premier addresses. Located at 150 Noll Street in Bushwick, One Fifty’s state-of-the-art apartments and high-end amenities make it the best Brooklyn has to offer."
+}
 const twoCoulmnData = [
   {
     variant: "brown",
@@ -30,12 +36,13 @@ const twoCoulmnData = [
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <Banner data={BannerData}/>
       {
         twoCoulmnData.map((section, index) => {
           return <TwoColumn key={index} data={section} />;
         })
       }
-    </div>
+    </>
   );
 }

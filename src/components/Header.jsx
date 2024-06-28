@@ -1,4 +1,4 @@
-import headerLogo from '../assets/images/header/header.png';
+import headerLogo from '../assets/images/Logos/header.png';
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';

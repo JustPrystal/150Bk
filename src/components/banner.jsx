@@ -15,8 +15,8 @@ const Banner = ({data}) => {
                 <img src={backgroundImage} alt="" className="background-image" />
                 <div className="inner">
                     {(heading || description) && <div className="content" >
-                        <h1 className="heading" data-aos="fade-left">{heading}</h1>
-                        <p className="description" data-aos="fade-left">{description}</p>
+                        <h1 className="heading" dangerouslySetInnerHTML={{ __html: heading }}/>
+                        <p className="description">{description}</p>
                         {
                             buttonUrl && buttonText && (
                                 <Link to="/">Back to Home</Link>

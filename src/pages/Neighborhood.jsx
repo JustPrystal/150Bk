@@ -3,7 +3,14 @@ import sec1Image from "../assets/images/OneFifty_Neighborhood/section_1.png";
 import sec2Image from "../assets/images/OneFifty_Neighborhood/section_2.png";
 import sec3Image from "../assets/images/OneFifty_Neighborhood/section_3.png";
 import sec4Image from "../assets/images/OneFifty_Neighborhood/section_4.png";
+import Banner from "../components/Banner";
+import BannerImage from "../assets/images/OneFifty_Neighborhood/Banner.png"
 
+let BannerData = {
+    backgroundImage : BannerImage,
+    heading : "Expand Your Horizons",
+    description: "You’ll be surrounded by excitement in Bushwick – one of Brooklyn’s most eclectic and authentically New York neighborhoods. Delicious eateries, local hot-spots, live music venues, and easy access to public transportation make this area one of Brooklyn’s finest."
+}
 
 const twoCoulmnData = [
     {
@@ -46,6 +53,7 @@ const twoCoulmnData = [
 export default function Neighborhoood(){
     return(
         <>
+              <Banner data={BannerData}/>
             {
                 twoCoulmnData.map((section, index) => {
                     return <TwoColumn key={index} data={section} />;

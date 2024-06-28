@@ -12,7 +12,14 @@ import sec6Image from "../assets/images/OneFifty_Building_v2/section_6.png";
 import sec7Image from "../assets/images/OneFifty_Building_v2/section_7_image_1.png";
 import sec8Image from "../assets/images/OneFifty_Building_v2/section_7_image_2.png";
 import sec9Image from "../assets/images/OneFifty_Building_v2/section_8.png";
+import Banner from "../components/Banner";
+import BannerImage from "../assets/images/OneFifty_Building_v2/Banner.png"
 
+let BannerData = {
+    backgroundImage : BannerImage,
+    heading : "Elevate Your Everyday",
+    description: "We believe your living space should elevate every aspect of your life. That’s why One Fifty offers incredible amenities like an on-site fitness center with yoga studio, a billiard room, and a rooftop screening area for watching movies on warm summer nights."
+}
 
 const twoCoulmnData = [
     {
@@ -97,6 +104,7 @@ const twoCoulmnData = [
 export default function Amenities(){
     return(
         <>
+              <Banner data={BannerData}/>
             {
                 twoCoulmnData.map((section, index) => {
                     return <TwoColumn key={index} data={section} />;
