@@ -15,7 +15,7 @@ footer{
         }
     }
     .inner{
-        max-width: 1440px;
+        max-width: 1700px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -27,6 +27,9 @@ footer{
         .origin-and-address{
             width: calc(50% - 200px);
             margin-bottom: 35px;
+            @include responsive(lg){
+                margin-bottom: 30px;
+            }
             @include responsive(sm){
                 width: 50%;
                 order: 1;
@@ -123,6 +126,9 @@ footer{
             width: calc(50% - 200px);
             text-align: end;
             margin-bottom: 30px;
+            @include responsive(lg){
+                margin-bottom: 25px;
+            }
             @include responsive(sm){
                 width: 50%;
                 order: 2;
