@@ -95,11 +95,14 @@ export default function Home() {
   return (
     <>
       <Banner data={BannerData}/>
+      <HomeFirstBlock data={HomeFirstBlockData}/>
       {
         twoCoulmnData.map((section, index) => {
           return <TwoColumn key={index} data={section} />;
         })
       }
+      <Table data={TableData}/>
+      <Footer data={footerData}/>
     </>
   );
 }

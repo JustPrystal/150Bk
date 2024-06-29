@@ -55,11 +55,11 @@ export default function Availabilities() {
               <Banner data={BannerData}/>
             <Table data={TableData} />
             <div className="button-wrap" style={{
-                marginBottom: "50px",
+                paddingBottom: "50px",
                 textAlign: "center",
                 backgroundColor: "#fff",
             }}>
-            <Link className="avaiabilities-button">Welcome to the 3D Tour</Link>
+                <Link className="avaiabilities-button">Welcome to the 3D Tour</Link>
             </div>
             <Footer data = {footerData}/>
         </>
