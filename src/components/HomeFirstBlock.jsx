@@ -1,6 +1,6 @@
 export default function HomeFirstBlock({data}){
 
-    const {heading, image, paragraph, image2,} = data;
+    const {heading, description, contentImage, image1, image2} = data;
 
     return(
         <>
@@ -12,15 +12,20 @@ export default function HomeFirstBlock({data}){
                         </h2>
                         <div className="image-and-paragraph-wrap">
                             <div className="paragraph-wrap">
-                                <p>{paragraph}</p>
+                                <p>{description}</p>
                             </div>
                             <div className="image-wrap">
-                                <img src={image} alt="" />
+                                <img src={contentImage} alt="" />
                             </div>
                         </div>
                     </div>
-                    <div className="image2-wrap">
-                        <img src={image2} alt="img" />
+                    <div className="images-wrap">
+                        <div className="image1-wrap image-wrap">
+                            <img src={image1} alt="" />
+                        </div>
+                        <div className="image2-wrap image-wrap">
+                            <img src={image2} alt="" />
+                        </div>
                     </div>
                 </div>
             </section>

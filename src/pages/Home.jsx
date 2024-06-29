@@ -9,7 +9,8 @@ import BannerImage from "../assets/images/OneFifty_HomePage_v1/Banner.png"
 import Table from "../components/Table";
 import HomeFirstBlock from "../components/HomeFirstBlock";
 import HomeFirstBlockImage1 from "../assets/images/OneFifty_HomePage_v1/section_1_image_1.png"
-import HomeFirstBlockImage2 from "../assets/images/OneFifty_HomePage_v1/section_1_image_2,3 combined.png"
+import HomeFirstBlockImage2 from "../assets/images/OneFifty_HomePage_v1/section_1_image_2.png"
+import HomeFirstBlockImage3 from "../assets/images/OneFifty_HomePage_v1/section_1_image_3.png"
 import Footer from "../components/Footer";
 
 let footerData = {
@@ -18,9 +19,10 @@ let footerData = {
 
 let HomeFirstBlockData = {
   heading : "Escape The Ordinary",
-  image : HomeFirstBlockImage1,
-  image2 : HomeFirstBlockImage2,
-  paragraph : "Every apartment at One Fifty Brooklyn is ready to take your breath away. Clean, bright, and airy, these upscale apartments feature crisp, contemporary design elements that come together to create a modern-day escape from the ordinary. "
+  description : "Every apartment at One Fifty Brooklyn is ready to take your breath away. Clean, bright, and airy, these upscale apartments feature crisp, contemporary design elements that come together to create a modern-day escape from the ordinary. ",
+  contentImage : HomeFirstBlockImage1,
+  image1 : HomeFirstBlockImage2,
+  image2 : HomeFirstBlockImage3,
 }
 
 let BannerData = {
