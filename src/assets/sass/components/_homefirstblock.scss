@@ -1,0 +1,127 @@
+.home-first-block{
+    background-color: #fff;
+    padding: 60px 40px 40px;
+    @include responsive(sm){
+        // padding-left: 20px;
+        // padding-right: 20px;
+    }
+    .container{
+        max-width: 1700px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @include responsive(sm){
+            flex-direction: column;
+            gap: 65px;
+        }
+        @include responsive(xs){
+            flex-direction: column;
+            gap: 45px;
+        }
+        .content-and-image-wrap{
+            width: calc(78% - 25px);
+            align-self: flex-end;
+            @include responsive(md){
+                width: calc(78% - 20px);
+            }
+            @include responsive(sm){
+                width: 100%;
+                align-self: unset;
+            }
+            .heading{
+                font-family: 'DirtyLine';
+                font-size: 120px;
+                color: #CF7127;
+                font-weight: 700;
+                margin-bottom: 50px;
+                @include responsive(xl){
+                    font-size: 100px;
+                }
+                @include responsive(lg){
+                    font-size: 80px;
+                    margin-bottom: 45px;
+                }
+                @include responsive(md){
+                    font-size: 60px;
+                    margin-bottom: 35px;
+                }
+                @include responsive(sm){
+                    font-size: 50px;
+                    margin-bottom: 30px;
+                }
+                @include responsive(xs){
+                    font-size: 40px;   
+                }
+            }
+            .image-and-paragraph-wrap{
+                display: flex;
+                justify-content: space-between;
+                @include responsive(sm){
+                    display: unset;
+                }
+                .image-wrap{
+                    width: calc(60% - 25px);
+                    @include responsive(lg){
+                        width: calc(60% - 20px);
+                    }
+                    @include responsive(md){
+                        width: calc(60% - 15px);
+                    }
+                    @include responsive(sm){
+                        width: 100%;
+                        order: unset;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                .paragraph-wrap{
+                    width: calc(40% - 25px);
+                    align-self: flex-end;
+                    order: 1;
+                    @include responsive(lg){
+                        width: calc(40% - 20px);
+                    }
+                    @include responsive(md){
+                        width: calc(40% - 15px);
+                    }
+                    @include responsive(sm){
+                        width: 100%;
+                        order: unset;
+                    }
+                    p{
+                        font-family: 'LabGrotesque';
+                        font-size: 22px;
+                        @include responsive(lg){
+                            font-size: 20px;
+                        }
+                        @include responsive(md){
+                            font-size: 18px;
+                        }
+                        @include responsive(sm){
+                            font-size: 16px; 
+                            margin-bottom: 30px;
+                        }
+                        @include responsive(xs){
+                            font-size: 14px;   
+                        }
+                    }
+                }
+            }
+        }
+        .image2-wrap{
+            width: calc(22% - 25px);
+            display: flex;
+            justify-content: flex-end;
+            @include responsive(md){
+                width: calc(22% - 20px);
+            }
+            @include responsive(sm){
+                width: 100%;
+            }
+                img{
+                    width: 100%;
+                }
+        }   
+    }
+}

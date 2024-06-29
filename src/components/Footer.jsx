@@ -5,7 +5,9 @@ import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import Modal from "../components/Modal"
 
-export default function Footer(){
+export default function Footer({data}){
+
+    const {backgroundColor} = data;
 
     const [modalShow, setModalShow] = useState(false);
     const [modalContent, setModalContent] = useState("");
@@ -22,6 +24,8 @@ export default function Footer(){
         }
         setModalShow(true)
     }
+
+
     let modalData = [
         {
             slug : "fair-housing",
@@ -48,7 +52,7 @@ export default function Footer(){
     ]
     return (
         <>
-            <footer>
+            <footer className={backgroundColor}>
                 <div className="inner">
                     <div className="origin-and-address">
                         <div className="logos-wrap">

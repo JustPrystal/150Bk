@@ -18,11 +18,16 @@ import sec8Image from "../assets/images/OneFifty_Building_v2/section_7_image_2.p
 import sec9Image from "../assets/images/OneFifty_Building_v2/section_8.png";
 import Banner from "../components/Banner";
 import BannerImage from "../assets/images/OneFifty_Building_v2/Banner.png"
+import Footer from "../components/Footer";
+
+let footerData = {
+    backgroundColor : "green"
+}
 
 let BannerData = {
     backgroundImage : BannerImage,
-    heading : "Elevate Your Everyday",
-    description: "We believe your living space should elevate every aspect of your life. That’s why One Fifty offers incredible amenities like an on-site fitness center with yoga studio, a billiard room, and a rooftop screening area for watching movies on warm summer nights."
+    heading : "Change The Way You Live",
+    description: "The amenities at One Fifty have been carefully designed to make your life better. A fitness center provides state-of-the-art equipment and a boutique-style yoga studio just steps from your front door. Curl up in front of the fireplace in the lounge or enjoy a movie under the stars on the rooftop’s outdoor screening area. This building offers more than just a place to rest your head – it’s filled with amenities designed to make your life more convenient, more efficient, and way more fun."
 }
 
 const twoCoulmnData = [
@@ -139,6 +144,7 @@ export default function Building(){
                     return <TwoColumn key={index} data={section} />;
                 })
             }
+            <Footer data = {footerData}/>
         </>
     )
 }

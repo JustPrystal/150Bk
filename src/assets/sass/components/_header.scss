@@ -83,6 +83,7 @@ header{
                     text-transform: capitalize;
                     font-family: 'Dirtyline';
                     font-size: 22px;
+                    letter-spacing: 1px;
                     text-decoration: none;
                     transition: color 300ms ease;
                     &.active{
@@ -92,9 +93,6 @@ header{
                     &:hover{
                         color: #f4e9d7;
                         text-decoration: underline;
-                    }
-                    @include responsive(xl){
-                        font-size: 20px;
                     }
                     @include responsive(lg){
                         margin-right: 0px;

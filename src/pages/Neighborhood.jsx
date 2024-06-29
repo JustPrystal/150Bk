@@ -7,6 +7,11 @@ import sec3Image2 from "../assets/images/OneFifty_Neighborhood/section_3_image_2
 import sec4Image from "../assets/images/OneFifty_Neighborhood/section_4.png";
 import Banner from "../components/Banner";
 import BannerImage from "../assets/images/OneFifty_Neighborhood/Banner.png"
+import Footer from "../components/Footer";
+
+let footerData = {
+    backgroundColor : "white"
+}
 
 let BannerData = {
     backgroundImage : BannerImage,
@@ -65,12 +70,13 @@ const twoCoulmnData = [
 export default function Neighborhoood(){
     return(
         <>
-              <Banner data={BannerData}/>
+            <Banner data={BannerData}/>
             {
                 twoCoulmnData.map((section, index) => {
                     return <TwoColumn key={index} data={section} />;
                 })
             }
+            <Footer data = {footerData}/>
         </>
     )
 }
