@@ -4,6 +4,21 @@ import sec3Image from "../assets/images/OneFifty_HomePage_v1/section_3_image_2.p
 import TwoColumn from "../components/TwoColumn";
 import Banner from "../components/Banner";
 import BannerImage from "../assets/images/OneFifty_HomePage_v1/Banner.png"
+import HomeFirstBlock from "../components/HomeFirstBlock";
+import HomeFirstBlockImage1 from "../assets/images/OneFifty_HomePage_v1/section_1_image_1.png"
+import HomeFirstBlockImage2 from "../assets/images/OneFifty_HomePage_v1/section_1_image_2,3 combined.png"
+import Footer from "../components/Footer";
+
+let footerData = {
+  backgroundColor : "white"
+}
+
+let HomeFirstBlockData = {
+  heading : "Escape The Ordinary",
+  image : HomeFirstBlockImage1,
+  image2 : HomeFirstBlockImage2,
+  paragraph : "Every apartment at One Fifty Brooklyn is ready to take your breath away. Clean, bright, and airy, these upscale apartments feature crisp, contemporary design elements that come together to create a modern-day escape from the ordinary. "
+}
 
 let BannerData = {
   backgroundImage : BannerImage,
@@ -40,11 +55,13 @@ export default function Home() {
   return (
     <>
       <Banner data={BannerData}/>
+      <HomeFirstBlock data={HomeFirstBlockData}/>
       {
         twoCoulmnData.map((section, index) => {
           return <TwoColumn key={index} data={section} />;
         })
       }
+      <Footer data = {footerData}/>
     </>
   );
 }

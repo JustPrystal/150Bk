@@ -1,5 +1,18 @@
 import Table from "../components/Table";
 import { Link } from "react-router-dom";
+import Banner from "../components/Banner";
+import BannerImage from "../assets/images/OneFifty_Availabilities/Banner.png"
+import Footer from "../components/Footer";
+
+let footerData = {
+    backgroundColor : "white"
+}
+
+let BannerData = {
+    backgroundImage : BannerImage,
+    heading : "Your Bushwick Apartment <span>is</span> Waiting",
+    description: "Use the table below to search for an apartment for rent at One Fifty Brooklyn that perfectly aligns with your lifestyle."
+}
 
 let TableData = [
     [
@@ -39,6 +52,7 @@ let TableData = [
 export default function Availabilities() {
     return (
         <>
+              <Banner data={BannerData}/>
             <h2 style={{
                 color: "#6D3214",
                 fontSize: "80px",
@@ -64,6 +78,7 @@ export default function Availabilities() {
                     textAlign: "center",
                 }}>Welcome to the 3D Tour</Link>
             </div>
+            <Footer data = {footerData}/>
         </>
     )
 }
