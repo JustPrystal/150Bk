@@ -8,15 +8,24 @@ export default function Table({ data }) {
         link: "",
         show: false,
     });
+
     const handleClickOnFloorPlan = (link) => {
         setShowFloorPlan({
             link: link,
             show: true,
         });
     };
-    
+
+    const closeModal = () => {
+        setShowFloorPlan({
+            link: "",
+            show: false,
+        });
+    };
+
     return (
         <>
+            <h2 className="avaiabilities-heading">Availabilities</h2>
             <div className="table">
                 <div className="inner">
                     <div className="table-row table-head">
@@ -63,6 +72,38 @@ export default function Table({ data }) {
                     ))}
                 </div>
             </div>
+            {(showFloorPlan.show) && (
+                <div className="show3d-modal availabilities-modal">
+                    <div className="inner">
+                        <div className="wrapper">
+                            <svg
+                                className="close-show3d-modal"
+                                onClick={closeModal}
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M19 5L4.99998 19M5.00001 5L19 19"
+                                        stroke="#ffffff"
+                                        strokeWidth="1.5"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    ></path>
+                                </g>
+                            </svg>
+                            {(showFloorPlan.show) && <img src={showFloorPlan.link} alt="floorplan" />}
+                        </div>
+                    </div>
+                </div>
+            )}
         </>
     )
 }

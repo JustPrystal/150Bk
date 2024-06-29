@@ -265,6 +265,27 @@
                 }
 
             }
+            .link-to-apply{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .text{
+                    color: white;
+                    font-family: 'DirtyLine';
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+                a{
+                    color: #f4e9d7;
+                    font-family: 'LabGrotesque';
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    &:hover{
+                        color: #dfd3c7;
+                    }
+                }
+            }
         }
 
         .image-wrap {

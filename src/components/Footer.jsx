@@ -1,4 +1,4 @@
-import footerLogo from "../assets/images/Logos/Footer.png";
+import footerLogo from "../assets/images/Logos/Footer.png"
 import EXRLogo from "../assets/images/Logos/Footer equal housing.png";
 import fairHousingLogo from "../assets/images/Logos/Footer exr.png";
 import { Link, NavLink } from "react-router-dom";

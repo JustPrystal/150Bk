@@ -1,213 +1,270 @@
-.two-column{
+.two-column {
 
-    @include responsive(sm){
-        padding-right: 20px;
-        padding-left: 20px;
+    @include responsive(sm) {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
     }
-    .container{
+
+    .container {
         margin: 0 auto;
         max-width: 1700px;
         gap: 50px;
 
-        @include responsive(lg){
+        @include responsive(lg) {
             gap: 40px;
         }
-        @include responsive(md){
+
+        @include responsive(md) {
             gap: 30px;
         }
-        @include responsive(sm){
-            flex-direction: row;
+
+        @include responsive(sm) {
+            flex-wrap: wrap !important;
+            flex-direction: row !important;
             justify-content: flex-start !important;
         }
 
-        .content-image-wrap{
+        .content-image-wrap {
             width: calc(50% - 25px);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-self: center;
+            height: 100%;
 
-            @include responsive(sm){
-                width: 100% !important;      
-                flex-direction: row;     
+            @include responsive(sm) {
+                width: 100% !important;
+                flex-direction: row;
             }
 
-            .content-wrap{
+            .content-wrap {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 margin-bottom: 50px;
 
-                @include responsive(sm){
-                    align-items: flex-start;  
-                    margin-bottom: 0;     
+                @include responsive(sm) {
+                    align-items: flex-start;
+                    margin-bottom: 0;
                 }
-                
-                .heading{
+
+                .heading {
                     width: 70%;
                     font-family: 'DirtyLine';
-                    font-size: 120px;
+                    font-size: 100px;
                     font-weight: 700;
                     margin-bottom: 30px;
 
-                    @include responsive(xl){
-                        font-size: 100px;
-                    }
-                    @include responsive(lg){
+                    @include responsive(xl) {
                         font-size: 80px;
                     }
-                    @include responsive(md){
-                        font-size: 60px;
+
+                    @include responsive(lg) {
+                        font-size: 70px;
                     }
-                    @include responsive(sm){
+
+                    @include responsive(md) {
                         font-size: 50px;
-                        width: 50%;
                     }
-                    @include responsive(xs){
-                        font-size: 40px;   
+
+                    @include responsive(sm) {
+                        font-size: 40px;
+                        width: 100%;
+                    }
+
+                    @include responsive(xs) {
+                        font-size: 30px;
                     }
                 }
-                .description{
+
+                .description {
                     width: 70%;
                     font-family: 'LabGrotesque';
                     font-size: 22px;
+                    line-height: 150%;
 
-                    @include responsive(lg){
+                    @include responsive(lg) {
                         font-size: 20px;
                     }
-                    @include responsive(md){
+
+                    @include responsive(md) {
                         font-size: 18px;
                     }
-                    @include responsive(sm){
-                        font-size: 16px; 
-                        width: 100%;  
+
+                    @include responsive(sm) {
+                        font-size: 16px;
+                        width: 100%;
                     }
-                    @include responsive(xs){
-                        font-size: 14px;   
+
+                    @include responsive(xs) {
+                        font-size: 14px;
                     }
                 }
             }
-            .image-wrap{
-                @include responsive(sm){
-                    display: none;       
+
+            .image-wrap {
+                @include responsive(sm) {
+                    display: none;
                 }
-                img{
+
+                img {
                     width: 100%;
                 }
             }
         }
-        .images-wrap{
+
+        .images-wrap {
             width: calc(50% - 25px);
 
-            @include responsive(sm){
-                width: 100% !important;           
+
+            @include responsive(sm) {
+                width: 100% !important;
+                gap: 30px !important;
+                flex-direction: column !important;
             }
-            
-            img{
+
+            &.row {}
+
+            .image-wrap {
                 width: 100%;
+                overflow: hidden;
+                border-radius: 50px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+
+                    @include responsive(sm) {
+                        width: 100%;
+                    }
+                }
             }
         }
     }
 
-    &.row-reverse{
+    &.row-reverse {
 
-        .content-image-wrap{
+        .content-image-wrap {
             align-items: flex-end;
 
-            @include responsive(sm){
-                align-items: flex-start;           
+            @include responsive(sm) {
+                align-items: flex-start;
             }
 
-            .content-wrap{
+            .content-wrap {
                 text-align: right;
                 align-items: flex-end;
 
-                @include responsive(sm){
+                @include responsive(sm) {
                     text-align: left;
-                    align-items: flex-start;    
-                }   
+                    align-items: flex-start;
+                }
+
+                .heading {
+                    width: 90%;
+
+                    @include responsive(sm) {
+                        width: 100%;
+                    }
+                }
+
+                .description {
+                    width: 90%;
+
+                    @include responsive(sm) {
+                        width: 100%;
+                    }
+                }
             }
         }
     }
-    &.brown{
+
+    &.brown {
         background-color: #6D3214;
 
-        .container{
+        .container {
 
-            .content-image-wrap{
+            .content-image-wrap {
 
-                .content-wrap{
+                .content-wrap {
 
-                    .heading{
+                    .heading {
                         color: #fff;
                     }
-                    .description{
+
+                    .description {
                         color: #fff;
                     }
                 }
             }
         }
     }
-    &.green{
+
+    &.green {
         background-color: #1A4A4A;
 
-        .container{
+        .container {
 
-            .content-image-wrap{
+            .content-image-wrap {
 
-                .content-wrap{
+                .content-wrap {
 
-                    .heading{
+                    .heading {
                         color: #fff;
                     }
-                    .description{
+
+                    .description {
                         color: #fff;
                     }
                 }
             }
         }
     }
-    &.white-orange{
+
+    &.white-orange {
         background-color: #fff;
 
-        .container{
+        .container {
 
-            .content-image-wrap{
+            .content-image-wrap {
 
-                .content-wrap{
+                .content-wrap {
 
-                    .heading{
+                    .heading {
                         color: #CF7127;
                     }
                 }
             }
         }
     }
-    &.white-brown{
+
+    &.white-brown {
         background-color: #fff;
 
-        .container{
+        .container {
 
-            .content-image-wrap{
+            .content-image-wrap {
 
-                .content-wrap{
+                .content-wrap {
 
-                    .heading{
+                    .heading {
                         color: #6D3214;
                     }
                 }
             }
         }
     }
-    &.white-blue{
+
+    &.white-blue {
         background-color: #fff;
 
-        .container{
+        .container {
 
-            .content-image-wrap{
+            .content-image-wrap {
 
-                .content-wrap{
+                .content-wrap {
 
-                    .heading{
+                    .heading {
                         color: #263A52;
                     }
                 }

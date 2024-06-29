@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import FormImage from '../assets/images/OneFifty_Contact/section_1.png';
+import axios from 'axios';
 
 export default function Form() {
 
@@ -12,25 +13,25 @@ export default function Form() {
     }
 
     const formSubmit = async (e) => {
-        // e.preventDefault();
-        // const tracking = await JSON.parse(localStorage.getItem("tracking"));
-        // const formData = new FormData(e.target);
-        // const { full_name, email, phone_number, layout, move_in_date, message } = Object.fromEntries(formData);
-        // const data = {
-        //     full_name,
-        //     phone_number,
-        //     email,
-        //     source: '2339nostrand.com',
-        //     layout,
-        //     move_in_date,
-        //     message,
-        //     tracking,
-        // };
-        // axios.post('https://www.exrny.com/api/leads/', data).finally(() => {
-        //     e.target.reset()
-        //     setFormSent(true);
-        //     // fbq('trackCustom', 'contactFormSubmit');
-        // })
+        e.preventDefault();
+        const tracking = await JSON.parse(localStorage.getItem("tracking"));
+        const formData = new FormData(e.target);
+        const { full_name, email, phone_number, layout, move_in_date, message } = Object.fromEntries(formData);
+        const data = {
+            full_name,
+            phone_number,
+            email,
+            source: 'xyz.com',
+            layout,
+            move_in_date,
+            message,
+            tracking,
+        };
+        axios.post('https://www.exrny.com/api/leads/', data).finally(() => {
+            e.target.reset()
+            setFormSent(true);
+            // fbq('trackCustom', 'contactFormSubmit');
+        })
     }
 
     const placeholderRemove = (e) => {
@@ -46,7 +47,7 @@ export default function Form() {
                     <div className="content">
                         <div className="form">
                             <form
-                                // onSubmit={formSubmit}
+                                onSubmit={formSubmit}
                                 id='main_form'
                             >
                                 {
@@ -87,6 +88,14 @@ export default function Form() {
                                         )
                                 }
                             </form>
+                        </div>
+                        <div className="link-to-apply">
+                            <p className="text" data-aos="fade-left">
+                                Looking for a link to apply?
+                            </p>
+                            <a href="https://www.exrny.com/apply?utm_source=+http%3A%2F%2F150bk.com&utm_medium=referral+&utm_campaign=landing_pages" className="button">
+                                Click here
+                            </a>
                         </div>
                     </div>
                     <div className="image-wrap">

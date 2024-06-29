@@ -1,6 +1,6 @@
 export default function TwoColumn({data}){
 
-    const {heading, description, images, isContentImage, contentImage, flexDirection, imageWidth, contentWidth, variant, padding} = data;
+    const {heading, description, images, isContentImage, contentImage, flexDirection, imageWidth, contentWidth, variant, padding, imagesDirection} = data;
 
     return(
         <>
@@ -9,10 +9,9 @@ export default function TwoColumn({data}){
             }} >
                 <div className="container" style={{
                     display: "flex",
-                    flexWrap: "wrap",
                     flexDirection: flexDirection,
                     justifyContent: "space-between",
-                    alignItems: "center",
+                    alignItems: "flex-end",
                 }} >
                     <div className="content-image-wrap" style={{
                         width: contentWidth,
@@ -29,10 +28,21 @@ export default function TwoColumn({data}){
                             <img src={contentImage} alt="content-img" />
                         </div> } 
                     </div>
-                    <div className="images-wrap" style={{
+                    <div className={"images-wrap " + imagesDirection} style={{
                         width: imageWidth,
+                        display: "flex",
+                        flexDirection: imagesDirection,
+                        gap: "50px",
+                        alignItems: "center",
+                        justifyContent: "center",
                     }} >
-                        <img src={images} alt="img" />
+                        {
+                            images.map((image, index) =>(
+                                <div className="image-wrap">
+                                    <img src={image} alt="img" key={index}/>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </section>
