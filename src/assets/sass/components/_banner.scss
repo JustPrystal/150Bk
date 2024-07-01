@@ -1,5 +1,5 @@
 .banner{
-    height: 85vh;
+    height: 86vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,9 +39,9 @@
         // @include responsive(xl){
         //     padding-top: 200px;
         // }
-        // @include responsive(lg){
-        //     padding: 300px 55px;
-        // }
+        @include responsive(lg){
+            padding: 0px 55px;
+        }
         @include responsive(md){
             padding: 180px 45px;
         }
