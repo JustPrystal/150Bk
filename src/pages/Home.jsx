@@ -6,6 +6,7 @@ import sec3Image2 from "../assets/images/OneFifty_HomePage_v1/section_3_image_3_
 import TwoColumn from "../components/TwoColumn";
 import Banner from "../components/Banner";
 import BannerImage from "../assets/images/OneFifty_HomePage_v1/Banner.png"
+import HomeFirstBlock from "../components/HomeFirstBlock";
 import Table from "../components/Table";
 import HomeFirstBlock from "../components/HomeFirstBlock";
 import HomeFirstBlockImage1 from "../assets/images/OneFifty_HomePage_v1/section_1_image_1.png"
