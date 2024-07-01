@@ -1,0 +1,14 @@
+.map{
+    height: 600px;
+    .map-popup{
+        padding-top: 5px;
+        text-align: center;
+        font-family: 'LabGrotesque';
+        line-height: 1;
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+    @include responsive(sm){
+        height: 400px;
+    }
+}
