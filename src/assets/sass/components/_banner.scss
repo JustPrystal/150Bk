@@ -33,7 +33,8 @@
         z-index: -1;
         height: 100vh;
         object-fit: cover;
-        @include responsive(md){
+
+        @include responsive(md) {
             position: absolute;
             height: 75vh;
         }
@@ -47,7 +48,8 @@
             height: 100vh;
         } 
     }
-    .inner{
+
+    .inner {
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -58,10 +60,12 @@
         .content{
             text-align: center;
             max-width: 1130px;
-            @include responsive(xs){
+
+            @include responsive(xs) {
                 max-width: 480px;
             }
-            .heading{
+
+            .heading {
                 font-family: 'DirtyLine';
                 font-size: 100px;
                 letter-spacing: -1.8px;
@@ -70,51 +74,64 @@
                 @include responsive(lg){
                     font-size: 80px;
                 }
-                @include responsive(md){
+
+                @include responsive(md) {
                     font-size: 60px;
                 }
-                @include responsive(sm){
+
+                @include responsive(sm) {
                     font-size: 50px;
                 }
-                @include responsive(xs){
+
+                @include responsive(xs) {
                     font-size: 45px;
                 }
-                span{
+
+                span {
                     display: inline-block;
                     transform: translateY(-25%);
                     font-size: 50px;
-                    @include responsive(lg){
+
+                    @include responsive(lg) {
                         font-size: 40px;
                     }
-                    @include responsive(md){
+
+                    @include responsive(md) {
                         font-size: 30px;
                     }
-                    @include responsive(sm){
+
+                    @include responsive(sm) {
                         font-size: 24px;
                     }
-                    @include responsive(xs){
+
+                    @include responsive(xs) {
                         font-size: 20px;
                     }
                 }
             }
-            .description{
+
+            .description {
                 margin: 0 auto;
                 margin-top: 20px;
                 color: #fff;
                 font-size: 26px;
                 font-family: 'LabGrotesque';
                 font-weight: 100;
-                @include responsive(lg){
+
+                @include responsive(lg) {
                     font-size: 22px;
                 }
-                @include responsive(md){
+
+                @include responsive(md) {
                     font-size: 18px;
                 }
-                @include responsive(sm){
+
+                @include responsive(sm) {
                     font-size: 16px;
                 }
             }
-            a{
+
+            a {
                 display: inline-block;
                 font-size: 16px;
                 color: #fff;
@@ -125,11 +142,12 @@
                 padding: 20px 30px;
                 margin-top: 40px;
 
-                &:hover{
-                    transition: 0.3s ease;
-                    color: #F4E9D7;
-                    border-color: #F4E9D7;
-                }
+                //     &:hover{
+                //         transition: 0.3s ease;
+                //         color: #F4E9D7;
+                //         border-color: #F4E9D7;
+                //     }
+                // }
             }
         }
     }
