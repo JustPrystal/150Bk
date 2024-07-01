@@ -9,6 +9,7 @@ let footerData = {
 
 let BannerData = {
     backgroundImage : BannerImage,
+    backgroundColor : "normal",
     heading : "You Deserve <span>the</span> Best",
     description: "Ready for a change? Use the contact form below and click “submit” to receive more information about renting an apartment at One Fifty and starting your next chapter in Bushwick, Brooklyn. "
 }

@@ -69,7 +69,6 @@
                     }
                     img{
                         width: 100%;
-                        border-radius: 50px;
                     }
                 }
                 .paragraph-wrap{
@@ -115,9 +114,7 @@
                 width: calc(22% - 20px);
             }
             @include responsive(sm){
-                display: unset;
-                flex-direction: unset;
-                justify-content: unset;
+                flex-direction: row;
                 width: 100%;
             }
             .image-wrap{
@@ -125,6 +122,7 @@
                 height: calc(50% - 10px);
                 @include responsive(sm){
                     height: unset;
+                    width: calc(50% - 10px);
                 }
                 img{
                     width: 100%;
@@ -132,11 +130,6 @@
                     @include responsive(sm){
                         height: unset;
                     }
-                }
-            }
-            .image1-wrap{
-                @include responsive(sm){
-                    margin-bottom: 30px;
                 }
             }
         }   

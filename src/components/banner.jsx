@@ -7,11 +7,12 @@ const Banner = ({data}) => {
         heading,
         description,
         buttonUrl, 
-        buttonText
+        buttonText,
+        bannerClass,
     } = data;
     return ( 
         <>
-            <div className="banner">
+            <div className={"banner " + bannerClass}>
                 <img src={backgroundImage} alt="" className="background-image" />
                 <div className="inner">
                     {(heading || description) && <div className="content" >

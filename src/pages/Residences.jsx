@@ -17,6 +17,7 @@ let footerData = {
 
 let BannerData = {
     backgroundImage : BannerImage,
+    backgroundColor : "normal",
     heading : "Step Inside One Fifty…",
     description: "Unlike other apartments for rent in Brooklyn, the apartments at One Fifty offer fresh, contemporary living spaces with a forward thinking point of view. Arched interior details subtly elevate each unit’s fresh, crisp design aesthetic. Complete with Stainless Steel appliances, hardwood flooring, and marble accents, the residences at One Fifty are ready to take your lifestyle to a whole new level."
 }

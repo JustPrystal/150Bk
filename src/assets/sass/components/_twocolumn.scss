@@ -120,7 +120,7 @@
             @include responsive(sm) {
                 width: 100% !important;
                 gap: 30px !important;
-                flex-direction: column !important;
+                // flex-direction: column !important;
             }
 
             &.row {}

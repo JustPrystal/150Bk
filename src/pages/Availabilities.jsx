@@ -10,6 +10,7 @@ let footerData = {
 
 let BannerData = {
     backgroundImage : BannerImage,
+    backgroundColor : "normal",
     heading : "Your Bushwick Apartment <span>is</span> Waiting",
     description: "Use the table below to search for an apartment for rent at One Fifty Brooklyn that perfectly aligns with your lifestyle."
 }

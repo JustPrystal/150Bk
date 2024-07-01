@@ -18,6 +18,7 @@ let footerData = {
 
 let BannerData = {
     backgroundImage : BannerImage,
+    backgroundColor : "normal",
     heading : "Expand Your Horizons",
     description: "You’ll be surrounded by excitement in Bushwick – one of Brooklyn’s most eclectic and authentically New York neighborhoods. Delicious eateries, local hot-spots, live music venues, and easy access to public transportation make this area one of Brooklyn’s finest."
 }

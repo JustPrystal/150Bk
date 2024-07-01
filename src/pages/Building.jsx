@@ -26,6 +26,7 @@ let footerData = {
 
 let BannerData = {
     backgroundImage : BannerImage,
+    backgroundColor : "normal",
     heading : "Change The Way You Live",
     description: "The amenities at One Fifty have been carefully designed to make your life better. A fitness center provides state-of-the-art equipment and a boutique-style yoga studio just steps from your front door. Curl up in front of the fireplace in the lounge or enjoy a movie under the stars on the rooftop’s outdoor screening area. This building offers more than just a place to rest your head – it’s filled with amenities designed to make your life more convenient, more efficient, and way more fun."
 }

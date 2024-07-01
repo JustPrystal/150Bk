@@ -1,7 +1,6 @@
 
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import About from "./pages/About";
 import Residences from "./pages/Residences";
 import Neighborhoood from "./pages/Neighborhood";
 import Availabilities from "./pages/Availabilities";
@@ -15,10 +14,6 @@ const routes = [
     {
         path: "/",
         element: <Home />,
-    },
-    {
-        path: "/about",
-        element: <About />,
     },
     {
         path: "/contact",

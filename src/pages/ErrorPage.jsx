@@ -9,6 +9,7 @@ let footerData = {
 
 let BannerData = {
   backgroundImage: BannerImage,
+  bannerClass: "error",
   heading: "404",
   description: "This page doesn't exist.",
   buttonUrl: "/",
