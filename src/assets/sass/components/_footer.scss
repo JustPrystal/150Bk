@@ -3,6 +3,11 @@
         background-color: #1a4a4a;
     }
 }
+.none{
+    &::after{
+        background-color: unset;
+    }
+}
 footer{
     background-color: #6d3214;
     padding: 40px;

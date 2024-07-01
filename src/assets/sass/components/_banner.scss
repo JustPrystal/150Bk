@@ -1,7 +1,11 @@
 .banner{
-    height: 100vh;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include responsive(md){
         height: unset;
+        display: unset;
     }
     .background-image{
         position: fixed;
@@ -29,15 +33,15 @@
     }
     .inner{
         margin: 0 auto;
-        padding-top: 180px;
+        // padding-top: 180px;
         display: flex;
         justify-content: center;
-        @include responsive(xl){
-            padding-top: 200px;
-        }
-        @include responsive(lg){
-            padding: 300px 55px;
-        }
+        // @include responsive(xl){
+        //     padding-top: 200px;
+        // }
+        // @include responsive(lg){
+        //     padding: 300px 55px;
+        // }
         @include responsive(md){
             padding: 180px 45px;
         }
@@ -106,23 +110,23 @@
                     font-size: 16px;
                 }
             }
-            // a{
-            //     display: inline-block;
-            //     font-size: 16px;
-            //     color: #fff;
-            //     cursor: pointer;
-            //     font-family: "Charlevoix Pro";
-            //     border: 1px solid #fff;
-            //     text-decoration: none;
-            //     padding: 20px 30px;
-            //     margin-top: 40px;
+            a{
+                display: inline-block;
+                font-size: 16px;
+                color: #fff;
+                cursor: pointer;
+                font-family: 'LabGrotesque';
+                border: 1px solid #fff;
+                text-decoration: none;
+                padding: 20px 30px;
+                margin-top: 40px;
 
-            //     &:hover{
-            //         transition: 0.3s ease;
-            //         color: #F4E9D7;
-            //         border-color: #F4E9D7;
-            //     }
-            // }
+                &:hover{
+                    transition: 0.3s ease;
+                    color: #F4E9D7;
+                    border-color: #F4E9D7;
+                }
+            }
         }
     }
 }
