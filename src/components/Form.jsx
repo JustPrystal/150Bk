@@ -21,7 +21,7 @@ export default function Form() {
             full_name,
             phone_number,
             email,
-            source: 'xyz.com',
+            source: '150nollbk.com',
             layout,
             move_in_date,
             message,
@@ -93,7 +93,7 @@ export default function Form() {
                             <p className="text" data-aos="fade-left">
                                 Looking for a link to apply?
                             </p>
-                            <a href="https://www.exrny.com/apply?utm_source=+http%3A%2F%2F150bk.com&utm_medium=referral+&utm_campaign=landing_pages" className="button">
+                            <a href="https://www.exrny.com/apply?utm_source=http%3A%2F%2F150bk.com%2F&utm_medium=referral&utm_campaign=landing_pages" className="button">
                                 Click here
                             </a>
                         </div>

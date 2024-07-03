@@ -57,14 +57,14 @@ export default function Footer({data}){
                     <div className="origin-and-address">
                         <div className="logos-wrap">
                             <div className="exr-logo logo">
-                                <a href="https://www.exrny.com/?utm_source=+http%3A%2F%2F150bk.com&utm_medium=referral+&utm_campaign=landing_pages"><img src={fairHousingLogo} alt="" /></a>
+                                <a href="https://www.exrny.com/?utm_source=http%3A%2F%2F150bk.com%2F&utm_medium=referral&utm_campaign=landing_pages"><img src={fairHousingLogo} alt="" /></a>
                             </div>
                             <div className="house-logo logo">
                                 <img src={EXRLogo} alt="" />
                             </div>
                         </div>
-                        {/* <a href="https://www.google.com/maps?q=2339+Nostrand+Ave,+Brooklyn,+NY+11210,+USA&ftid=0x89c244ad93161391:0xc376b00294c5f48e" >
-                        2339 Nostrand Ave, <br /> Brooklyn, NY 11210, USA</a> */}
+                        <a href="https://www.google.com/maps/place/150+Noll+St,+Brooklyn,+NY+11206,+USA/@40.7030037,-73.9307691,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25c06ad99f85b:0x795edc0a8fcf7475!8m2!3d40.7030037!4d-73.9307691!16s%2Fg%2F11sv05zgb6?entry=ttu" >
+                        150 Noll St, <br /> Brooklyn, NY 11206, USA</a>
                     </div>
                     <div className="logo-and-copyright">
                         <Link onClick={scrollUp} to="/"><img src={footerLogo} alt="footer logo" /></Link>

@@ -8,7 +8,10 @@ const hostname = process.env.REACT_APP_HOSTNAME || 'https://www.example.com';
 const urls = [
     { url: '/', changefreq: 'daily', priority: 1.0 },
     { url: '/contact', changefreq: 'daily', priority: 0.8 },
-    { url: '/about', changefreq: 'daily', priority: 0.8 },
+    { url: '/residences', changefreq: 'daily', priority: 0.8 },
+    { url: '/building', changefreq: 'daily', priority: 0.8 },
+    { url: '/neighborhood', changefreq: 'daily', priority: 0.8 },
+    { url: '/availabilities', changefreq: 'daily', priority: 0.8 },
 ];
 
 // Create a writable stream to generate the sitemap
